@@ -24,6 +24,11 @@ export default {
   components: {
     CartItem,
   },
+  data(){
+    return{
+      cart: this.$store.state.cart
+    }
+  },
   computed: {
     cartTotal() {
       return this.cart.total.toFixed(2);
